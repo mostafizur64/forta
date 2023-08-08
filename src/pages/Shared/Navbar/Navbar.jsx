@@ -4,11 +4,11 @@ import { FaBars, FaXmark } from "react-icons/fa6";
 import Container from "../../../components/Container/Container";
 const Navbar = () => {
   let links = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Contact", link: "/" },
-    { name: "Blogs", link: "/" },
-    { name: "snake", link: "/" },
+    { name: "Subscribe", link: "/" },
+    { name: "Build", link: "/" },
+    { name: "Case Studies", link: "/" },
+    { name: "Stake", link: "/" },
+    { name: "Blog", link: "/" },
   ];
   let [open, setOpen] = useState(false);
   return (
