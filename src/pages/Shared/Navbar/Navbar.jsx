@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <>
       <Container>
-        <div className="navbar text-[#fff]">
-          <div className="py-[41px] md:flex justify-between items-center  ">
+        <div className="text-[#fff] ">
+          <div className="py-[41px] md:flex justify-between items-center ">
             {/* logo here  */}
             <div className=" cursor-pointer">
               <h1 className="text-5xl">* Forta</h1>
