@@ -6,10 +6,23 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/images/bannerImg/Forta.png"),url('https://i.ibb.co/2ht5Fvx/quality-3.png');
+  background-image: url("./assets/images/bannerImg/Forta.png");
   background-repeat: no-repeat;
   margin-top: 50px;
   opacity: 999;
+}
+.navbar::after {
+  position: absolute;
+  content: "";
+  max-width: 857px;
+  width: 100%;
+  height: 857px;
+  flex-shrink: 0;
+  border-radius: 857px;
+  background: #4a409e;
+  filter: blur(153.5px);
+  top: -275px;
+  left: -142px;
 }
 
 /* video play button css  */
@@ -18,20 +31,81 @@
 }
 
 /* background shadow image  */
-.background-image{
-width: 1356.847px;
-height: 1356.847px;
-transform: rotate(15deg);
-opacity: 999;
-background: linear-gradient(180deg, #0D0E14 0%, rgba(13, 14, 20, 0.00) 50.00%, #0D0E14 100%)/ cover no-repeat;
-background-position: center;
-background-size: cover;
+.background-image {
+  width: 1356.847px;
+  height: 1356.847px;
+  transform: rotate(15deg);
+  opacity: 999;
+  background: linear-gradient(
+      180deg,
+      #0d0e14 0%,
+      rgba(13, 14, 20, 0) 50%,
+      #0d0e14 100%
+    ) / cover no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.sliders{
+.sliders {
   width: 450px !important ;
   height: 232px !important;
   border-radius: 16px;
-border: 1px solid rgba(197, 188, 248, 0.15);
-padding: 50px 22px;
+  border: 1px solid rgba(197, 188, 248, 0.15);
+  padding: 50px 22px;
+}
+/* web Economy section css  */
+.web-title {
+  text-align: right;
+  text-shadow: 0px 10px 62px rgba(0, 0, 0, 0.3);
+  font-family: PP Neue Montreal;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 84px */
+  background: linear-gradient(180deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.web-btn {
+  padding: 28px 70px;
+  justify-content: right;
+  align-items: center;
+  border-radius: 102px;
+  font-size: 24px;
+  border: 1px solid rgba(197, 188, 248, 0.15);
+  background: linear-gradient(168deg, #292840 0%, #11111c 49.08%, #0e0f16 100%);
+}
+.color-effect::after {
+  position: absolute;
+  content: "";
+  max-width: 712px;
+  height: 712px;
+  width: 100%;
+  border-radius: 712.999px;
+  background: rgba(74, 64, 158, 0.8);
+  filter: blur(153.5px);
+  color: #4a409e;
+}
+/* faqItem css  */
+.bg-color {
+  border-right: 1.5px solid rgba(231, 228, 248, 0.15);
+  border-left: 1.5px solid rgba(231, 228, 248, 0.15);
+  background: linear-gradient(
+      168deg,
+      rgba(44, 42, 64, 0.8) 0%,
+      rgba(17, 17, 28, 0.8) 49.08%,
+      rgba(14, 15, 22, 0.8) 100%
+    ),
+    linear-gradient(
+      168deg,
+      rgba(30, 28, 54, 0.5) 0%,
+      rgba(17, 17, 28, 0.5) 49.08%,
+      rgba(14, 15, 22, 0.5) 100%
+    );
+  max-width: 1507.735px;
+  width: 100%;
+  height: 143.58px;
+  flex-shrink: 0;
 }

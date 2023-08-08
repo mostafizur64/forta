@@ -31,7 +31,7 @@ const Banner = () => {
         src="https://i.ibb.co/2ht5Fvx/quality-3.png"
         alt=""
       /> */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-4 lg:gap-[274px]  text-[#fff]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-4 lg:gap-[274px] mt-[221px] text-[#fff]">
         <div>
           <h2 className="text-[22px]">Total Value Monitored</h2>
           <h1 className="text-[45px]">$44,013,398,915 </h1>
