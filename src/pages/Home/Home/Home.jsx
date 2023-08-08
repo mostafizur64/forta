@@ -4,6 +4,7 @@ import FaqItem from "../FaqItem/FaqItem";
 import MonitoringAndProtecting from "../MonitoringAndProtecting/MonitoringAndProtecting";
 import Slider from "../Slider/Slider";
 import WebEconomy from "../WebEconomy/WebEconomy";
+import WorldCommunity from "../WorldCommunity/WorldCommunity";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Slider/>
       <WebEconomy/>
       <FaqItem/>
+      <WorldCommunity/>
     </div>
   );
 };

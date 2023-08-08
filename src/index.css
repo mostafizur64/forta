@@ -109,3 +109,19 @@
   height: 143.58px;
   flex-shrink: 0;
 }
+/* arrow icon css  */
+
+.collapse-arrow.collapse-title {
+  width: 64px;
+  height: 64px;
+}
+.collapse-arrow .collapse-title:after {
+  /* background: green;
+  border: 2px solid red; */
+}
+
+/* community cols css  */
+.col-custom-color{
+  background: linear-gradient(168deg, rgba(44, 42, 64, 0.80) 0%, rgba(17, 17, 28, 0.80) 49.08%, rgba(14, 15, 22, 0.80) 100%);
+}
+

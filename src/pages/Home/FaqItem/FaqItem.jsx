@@ -9,7 +9,7 @@ const FaqItem = () => {
       >
         Frequently asked questions
       </h1>
-      <div className="text-white space-y-6">
+      <div className="text-white space-y-[40px] mt-[70px]">
         <div className="collapse collapse-arrow bg-color">
           <input type="radio" name="my-accordion-2" checked="checked" />
           <div className="collapse-title text-xl font-medium">
@@ -37,9 +37,17 @@ const FaqItem = () => {
             <p>hello</p>
           </div>
         </div>
+        <div className="collapse collapse-arrow  bg-color px-[40px] py-[40px] ">
+          <input type="radio" name="my-accordion-2" />
+          <div className="collapse-title text-xl ">
+            Click to open this one and close others
+          </div>
+          <div className="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        
       </div>
-
-      
     </Container>
   );
 };
