@@ -1,18 +1,21 @@
 import Container from "../../../components/Container/Container";
 import BannerImg from "../../../assets/images/bannerImg/quality 1.png";
 import VideoButton from "./VideoButton";
-import { FaArrowUp } from "react-icons/fa6";
+import { FaArrowUp, FaGithub, FaGithubAlt, FaLocationArrow, FaSquareTwitter } from "react-icons/fa6";
+import img from '../../../assets/images/logo/Forta.png'
 const Banner = () => {
   return (
+    // grid grid-cols-1 lg:grid-cols-2 gap-12
     <Container>
-      <div className="banner lg:max-w-[1416px] lg:ml-[320px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <p className="absolute left-0 lg:left-[170px] lg:w-[1073px] lg:top-[320px]  text-white text-[25px] lg:text-[75px] capitalize px-4">
+      <div className="banner relative">
+        <img className="w-full h-full mt-12 ml-48" src={img} alt="logo" />
+        <div className="absolute top-0 grid lg:grid-cols-2 grid-cols-1 items-center mt-[100px]">
+          <p className="lg:w-[1073px] w-full z-20 text-white text-[25px] lg:text-[75px] capitalize ">
             Detect Web3 Threats and Anomalies in Real-Time with Machine Learning
           </p>
-          <div>
+          <div className="absolute lg:left-[30%] w-full z-10 -lg:top-10 -top-48  ">
             <img
-              className="w-[769px] h-[769px] lg:ml-[270px] ml-0 lg:mt-0 mt-56"
+              className="lg:w-[769px] h-full w-[400px] "
               src={BannerImg}
               alt=""
             />
@@ -20,12 +23,27 @@ const Banner = () => {
         </div>
       </div>
       <div className="">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 text-white justify-between items-center ">
-          <div className="lg:mt-[-376px]">{/* <VideoButton /> */}</div>
-          <div className="lg:ml-0 lg:text-right lg:mt-[-498px]">right site</div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 text-white justify-between items-center mt-64">
+          <div className="lg:mt-[-376px]"><VideoButton /></div>
+          <div className="lg:ml-0 flex lg:justify-end justify-center lg:mt-[-498px] mt-36  z-50">
+          <ul className="flex lg:flex-col gap-[25px] mt-[24px]">
+            <li className="w-[49px] h-[49px] border border-white rounded-full flex items-center justify-center">
+              <FaSquareTwitter className="w-[24px] h-[24px]" />
+            </li>
+            <li className="w-[49px] h-[49px] border border-white rounded-full flex items-center justify-center">
+              <FaLocationArrow className="w-[24px] h-[24px]" />
+            </li>
+            <li className="w-[49px] h-[49px] border border-white rounded-full flex items-center justify-center">
+              <FaGithubAlt className="w-[24px] h-[24px]" />
+            </li>
+            <li className="w-[49px] h-[49px] border border-white rounded-full flex items-center justify-center">
+              <FaGithub className="w-[24px] h-[24px]" />
+            </li>
+          </ul>
+          </div>
         </div>
       </div>
-      {/* 
+{/*       
       <img
         className="background-image -mt-[704px] -ml-[197px]"
         src="https://i.ibb.co/2ht5Fvx/quality-3.png"
