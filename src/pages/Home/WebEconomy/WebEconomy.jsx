@@ -10,7 +10,7 @@ const WebEconomy = () => {
           <img className="w-full" src={Img} alt="" />
         </div>
         <div className="lg:w-[1434px] lg:text-right lg:-ml-[666px]">
-          <h1 className="text-[60px] web-title mt-16">
+          <h1 className="text-[60px] web-title mt-28">
             As the Web3 economy grows in value and complexity, security has
             become increasingly critical. More than $1 billion was lost in the
             first quarter of 2022 due to hacks and exploits, some of which have

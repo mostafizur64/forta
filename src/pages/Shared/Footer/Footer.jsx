@@ -13,8 +13,8 @@ import {
 const Footer = () => {
   return (
     <Container>
-      <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-[70px] justify-between items-center mt-[307px] text-white footer-shadow">
-      <img className="absolute w-full mt-[106px] px-[50px] bg-no-repeat bg-cover bg-center" src={bgimg} alt="logo" />
+      <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-[70px] justify-between items-center mt-[100px] text-white footer-shadow">
+      <img className="absolute w-full mt-[400px] px-[50px] bg-no-repeat bg-cover bg-center" src={bgimg} alt="logo" />
         <div className="">
           <img className="w-[154px] h-[34px]" src={logo} alt="logo" />
           <p className="mt-[30px] mb-[40px]">©2023 – All Rights Reserved</p>
@@ -37,16 +37,16 @@ const Footer = () => {
         <div className="z-50">
           <img className="w-[582px] h-[548px] " src={img} alt="middleimg" />
         </div>
-        <div className="w-[395px] lg:ml-[40px]">
+        <div className="lg:w-[395px] w-full  lg:ml-[40px]">
           <h2 className="text-[40px]">Stay updated on the latest Forta news</h2>
           <p className="mt-[24px] mb-[36px]">
             Add your email below to keep up withthe latest announcements
           </p>
           <div className="relative">
             <input
-              className="absolute text-white bg-[#1f1f3846] lg:w-[389px] w-[250px] opacity-[1]"
+              className="absolute text-white  lg:w-[389px] w-[250px] opacity-[1]"
               type="text"
-              placeholder="Email Address"
+              placeholder="Email Address" style={{background:'none'}}
             />
             <FaArrowRight className="absolute w-[18px] h-[18px] lg:right-[10px] right-[170px] top-1 " />
             <img

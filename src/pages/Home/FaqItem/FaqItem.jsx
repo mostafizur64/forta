@@ -1,19 +1,41 @@
 import React, { useState } from "react";
-// import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/solid';
-import { FaSquareTwitter, FaLocationArrow } from "react-icons/fa6";
+import { FaAngleUp, FaAngleDown } from "react-icons/fa";
+import Container from "../../../components/Container/Container";
+
 const FaqItem = () => {
   const faqs = [
     {
-      question: "What is Tailwind CSS?",
-      answer: "Tailwind CSS is a utility-first CSS framework...",
+      question: "Is Forta a blockchain?",
+      answer:
+        "You can subscribe to alerts from specific bots or contracts using the Forta App subscriptions page. Once signed in with your wallet, you can setup notifications for alerts. Currently, the supported channels to receive notifications are email, Slack, Telegram, Discord and webhooks.",
     },
     {
-      question: "How do I install Tailwind CSS?",
-      answer: "You can install Tailwind CSS using npm or yarn...",
+      question: "How can I consume alerts from bots?",
+      answer:
+        "You can subscribe to alerts from specific bots or contracts using the Forta App subscriptions page. Once signed in with your wallet, you can setup notifications for alerts. Currently, the supported channels to receive notifications are email, Slack, Telegram, Discord and webhooks.",
+    },
+    {
+      question: "How do I run a scan node?",
+      answer:
+        "You can subscribe to alerts from specific bots or contracts using the Forta App subscriptions page. Once signed in with your wallet, you can setup notifications for alerts. Currently, the supported channels to receive notifications are email, Slack, Telegram, Discord and webhooks.",
+    },
+    {
+      question: "Do I need special hardware to run scan nodes?",
+      answer:
+        "You can subscribe to alerts from specific bots or contracts using the Forta App subscriptions page. Once signed in with your wallet, you can setup notifications for alerts. Currently, the supported channels to receive notifications are email, Slack, Telegram, Discord and webhooks.",
+    },
+    {
+      question: "Can I scan other blockchains like BSC?",
+      answer:
+        "You can subscribe to alerts from specific bots or contracts using the Forta App subscriptions page. Once signed in with your wallet, you can setup notifications for alerts. Currently, the supported channels to receive notifications are email, Slack, Telegram, Discord and webhooks.",
+    },
+    {
+      question: "What makes a good bot?",
+      answer:
+        "You can subscribe to alerts from specific bots or contracts using the Forta App subscriptions page. Once signed in with your wallet, you can setup notifications for alerts. Currently, the supported channels to receive notifications are email, Slack, Telegram, Discord and webhooks.",
     },
     // Add more faqs as needed
   ];
-
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFaq = (index) => {
@@ -25,31 +47,53 @@ const FaqItem = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto py-8">
-      <h2 className="text-2xl font-semibold mb-4">
-        Frequently Asked Questions
-      </h2>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border rounded p-4">
+    <Container>
+      <div className="">
+        <h1
+          className="text-center text-[60px] capitalize"
+          style={{ color: "rgba(228,230,237,0.90)" }}
+        >
+          Frequently asked questions
+        </h1>
+        <div className="space-y-8 mt-[60px]">
+          {faqs.map((faq, index) => (
             <div
-              className="flex justify-between items-center cursor-pointer"
-              onClick={() => toggleFaq(index)}
+              key={index}
+              className={`px-12 py-8 bg-color justify-center items-center rounded ${
+                activeIndex === index ? "box" : ""
+              }`}
             >
-              <h3 className="text-lg font-medium">{faq.question}</h3>
-              {activeIndex === index ? (
-                <FaSquareTwitter className="h-8 w-8 border border-white flex items-center justify-center" />
-              ) : (
-                <FaLocationArrow className="h-8 w-8" />
+              <div
+                className="flex justify-between items-center cursor-pointer -mt-[7]"
+                onClick={() => toggleFaq(index)}
+              >
+                <h3 className="lg:text-[38px] text-[24px] font-medium text-[#D9D9D9]">
+                  {faq.question}
+                </h3>
+                {activeIndex === index ? (
+                  <FaAngleUp
+                    onClick={() => {
+                      toggleFaq(index);
+                      // Set the button state here if needed
+                    }}
+                    className="h-8 w-8 p-2 rounded-lg text-white border border-white flex items-center justify-center"
+                  />
+                ) : (
+                  <FaAngleDown className="h-8 w-8 p-2 rounded-lg text-white border border-white" />
+                )}
+              </div>
+              {activeIndex === index && (
+                <>
+                  <p className="-mt-2 text-[#9F9FA6] text-[16px] ">
+                    {faq.answer}
+                  </p>
+                </>
               )}
             </div>
-            {activeIndex === index && (
-              <p className="mt-2 text-gray-600">{faq.answer}</p>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

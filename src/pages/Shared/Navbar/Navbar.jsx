@@ -19,7 +19,6 @@ const Navbar = () => {
             {/* logo here  */}
             <div className="cursor-pointer z-50">
               <img
-                src
                 className="w-[152px] h-[33px] cursor-pointer"
                 src={logo}
                 alt="logo"
@@ -54,11 +53,11 @@ const Navbar = () => {
                 </li>
               ))}
               {/* add new item  */}
-              <button className="btn py-[16px] px-[30px] md:ml-10 rounded-[154px] border border-1-[#fff] md:static lg:hidden ">
+              <button className="btn py-[16px] px-[30px] md:ml-10 rounded-[154px] border border-1-[#fff] md:static lg:hidden  bg-[#0D0E14] text-[#fff]">
                 Launch App
               </button>
             </ul>
-            <button className="btn py-[16px] px-[30px] md:ml-10 rounded-[154px] border border-1-[#fff] md:static hidden lg:block">
+            <button className="btn py-[16px] px-[30px] md:ml-10 rounded-[154px] border border-1-[#fff] md:static hidden lg:block bg-[#0D0E14] text-[#fff]">
               Launch App
             </button>
           </div>

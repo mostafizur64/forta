@@ -22,6 +22,7 @@
   filter: blur(153.5px);
   top: -338px;
   left: -285px;
+  opacity: 1;
 }
 
 /* video play button css  */
@@ -76,7 +77,7 @@
   border: 1px solid rgba(197, 188, 248, 0.15);
   background: linear-gradient(168deg, #292840 0%, #11111c 49.08%, #0e0f16 100%);
 }
-.color-effect::after {
+/* .color-effect::after {
   position: absolute;
   content: "";
   max-width: 712px;
@@ -86,7 +87,7 @@
   background: rgba(74, 64, 158, 0.8);
   filter: blur(153.5px);
   color: #4a409e;
-}
+} */
 /* faqItem css  */
 .bg-color {
   border-right: 1.5px solid rgba(231, 228, 248, 0.15);
@@ -106,19 +107,22 @@
   max-width: 1507.735px;
   width: 100%;
   height: 143.58px;
-  flex-shrink: 0;
-}
-/* arrow icon css  */
-
-.collapse-arrow.collapse-title {
-  width: 64px;
-  height: 64px;
-}
-.collapse-arrow .collapse-title:after {
-  /* background: green;
-  border: 2px solid red; */
+  overflow: hidden;
 }
 
+.box {
+
+  border-radius: 16px;
+  box-shadow: 7px 17px 5px 0px  #7154e5;
+-webkit-box-shadow: 7px 17px 5px 0px #7154e5;
+-moz-box-shadow: 7px 17px 5px 0px #7154e5;
+
+}
+.another-show {
+  max-width: 1507.735px !important;
+  width: 100%;
+  height: 143.58px !important;
+}
 /* community cols css  */
 .col-custom-color {
   background: linear-gradient(
@@ -129,7 +133,7 @@
   );
 }
 
-.footer-shadow::before {
+/* .footer-shadow::before {
   position: absolute;
   content: "";
   left: 500px;
@@ -143,4 +147,4 @@
   background: #4a409e;
   filter: blur(200px);
   opacity: 999;
-}
+} */
