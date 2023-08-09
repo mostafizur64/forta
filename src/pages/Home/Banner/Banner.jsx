@@ -29,7 +29,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 text-white justify-between items-center mt-64">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-white justify-between items-center mt-64">
           <div className="lg:mt-[-376px]">
             <VideoButton />
           </div>
@@ -57,8 +57,8 @@ const Banner = () => {
         src="https://i.ibb.co/2ht5Fvx/quality-3.png"
         alt=""
       />
-      <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-4 lg:gap-[274px]  text-[#fff]">
-        <div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-4 lg:gap-[274px]  text-[#fff] lg:-mt-[245px] -mt-[185px]">
+        <div className="lg:w-[456px] mx-auto">
           <h2 className="text-[22px]">Total Value Monitored</h2>
           <h1 className="text-[45px]">$44,013,398,915 </h1>
         </div>
@@ -74,7 +74,7 @@ const Banner = () => {
         </div>
 
         <div>
-          <h2 className="text-[24px] w-[456px]">
+          <h2 className="text-[24px] lg:w-[456px] mx-auto text-center">
             The leading decentralized security & operational monitoring network
             for wallets, developers, and investors
           </h2>

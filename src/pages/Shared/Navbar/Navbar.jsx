@@ -30,7 +30,7 @@ const Navbar = () => {
             {/* menu icon  */}
             <div
               onClick={() => setOpen(!open)}
-              className="absolute right-8 top-6 cursor-pointer md:hidden"
+              className="absolute right-8 top-6 cursor-pointer md:hidden mt-[19px]"
             >
               {open ? (
                 <FaXmark className=" w-6 h-6 " />
