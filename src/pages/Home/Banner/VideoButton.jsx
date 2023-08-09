@@ -11,7 +11,7 @@ const VideoButton = () => {
           alt=""
         />
         <img
-          className="absolute lg:top-[75px] lg:left-[75px] lg:z-1 z lg:w-[315px] h-[105px] w-[270px] top-[53px] left-[66px]"
+          className="absolute lg:top-[75px] lg:left-[75px] lg:z-1 z lg:w-[315px] h-[105px] w-[270px] top-[57px] left-[64px]"
           src="https://i.ibb.co/s6Rzkdj/Rectangle-405.png"
           alt=""
         />

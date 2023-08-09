@@ -23,7 +23,7 @@ const WorldCommunity = () => {
           World-class backers and
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-[37px] justify-between items-center mt-[24px]">
-        <div className="slider-shadow "></div>
+     
           <img className="w-[665px]" src={lineBar} alt="" />
           <h1 className="lg:text-[60px] text-[40px] italic text-[#F2F2F2]  capitalize">
             community members

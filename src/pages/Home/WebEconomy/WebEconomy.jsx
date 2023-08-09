@@ -5,7 +5,7 @@ import { FaArrowUp } from "react-icons/fa6";
 const WebEconomy = () => {
   return (
     <Container>
-      <div className="grid lg:grid-cols-2 justify-between items-centerlg:gap-[10px] color-effect">
+      <div className="grid lg:grid-cols-2 justify-between items-center lg:gap-[10px] color-effect">
         <div>
           <img className="w-full" src={Img} alt="" />
         </div>
