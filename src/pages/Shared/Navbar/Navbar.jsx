@@ -40,7 +40,7 @@ const Navbar = () => {
             </div>
             {/* nav links are here  */}
             <ul
-              className={`md:flex md:items-center md:pb-0 pb-12 lg:mt-0 mt-12 absolute md:static text-white md:z-auto z-50 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in gap-9 ${
+              className={`md:flex md:items-center md:pb-0 pb-12 lg:mt-0 mt-12 absolute md:static text-white md:z-auto z-50 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in gap-9 md:bg-transparent bg-[#4A409E] ${
                 open ? "top-12" : "top-[-490px]"
               }`}
             >

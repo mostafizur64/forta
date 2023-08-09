@@ -14,9 +14,9 @@ const Banner = () => {
     // grid grid-cols-1 lg:grid-cols-2 gap-12
     <Container>
       <div className="banner relative">
-        <img className="w-full h-full mt-12 lg:ml-48 z-50" src={img} alt="logo" />
+        <img className="w-full h-full mt-12 lg:ml-[187px] z-50" src={img} alt="logo" />
         <div className="absolute top-0 grid lg:grid-cols-2 grid-cols-1 items-center mt-[100px]">
-          <p className="lg:w-[1073px] w-full z-20 text-white text-[25px] lg:text-[75px] capitalize ">
+          <p className="lg:w-[1073px] w-full text-center z-20 text-white text-[25px] lg:text-[75px] capitalize ">
             Detect Web3 Threats and Anomalies in Real-Time with Machine Learning
           </p>
           <div className="absolute lg:left-[30%]  z-10 -lg:top-10 -top-48  ">

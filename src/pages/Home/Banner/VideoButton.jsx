@@ -11,11 +11,11 @@ const VideoButton = () => {
           alt=""
         />
         <img
-          className="absolute lg:top-[75px] lg:left-[75px] lg:z-1 z lg:w-[315px] h-[105px] w-[270px] top-[62px] left-[75px]"
+          className="absolute lg:top-[75px] lg:left-[75px] lg:z-1 z lg:w-[315px] h-[105px] w-[270px] top-[53px] left-[66px]"
           src="https://i.ibb.co/s6Rzkdj/Rectangle-405.png"
           alt=""
         />
-        <div className="absolute lg:top-[95px] lg:left-28 top-20 left-20 flex justify-center items-center gap-8 cursor-pointer">
+        <div className="absolute lg:top-[95px] lg:left-28 top-[72px] left-[72px] flex justify-center items-center gap-4 cursor-pointer">
           <div className="text-2xl border border-white rounded-full"><FaCirclePlay size={60} className="p-2"/></div>
           <div className="w-full text-2xl">start play video</div>
         </div>

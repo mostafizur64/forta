@@ -48,14 +48,14 @@ const FaqItem = () => {
 
   return (
     <Container>
-      <div className="">
+      <div className="faq-shadow relative z-50 ">
         <h1
           className="text-center text-[60px] capitalize"
           style={{ color: "rgba(228,230,237,0.90)" }}
         >
           Frequently asked questions
         </h1>
-        <div className="space-y-8 mt-[60px]">
+        <div className=" space-y-8 mt-[60px]">
           {faqs.map((faq, index) => (
             <div
               key={index}

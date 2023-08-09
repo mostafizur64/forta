@@ -44,15 +44,15 @@ const Footer = () => {
           </p>
           <div className="relative">
             <input
-              className="absolute text-white  lg:w-[389px] w-[250px] opacity-[1]"
+              className="text-white  lg:w-[389px] w-full opacity-[1]"
               type="text"
               placeholder="Email Address" style={{background:'none'}}
             />
-            <FaArrowRight className="absolute w-[18px] h-[18px] lg:right-[10px] right-[170px] top-1 " />
+            <FaArrowRight className="absolute w-[18px] h-[18px] lg:right-[10px] right-[50px] top-1 " />
             <img
               src={linebar}
               alt=""
-              className="absolute mt-8 lg:w-[389px]  w-[250px] "
+              className="absolute mt-8 lg:w-[389px] w-full "
             />
           </div>
         </div>

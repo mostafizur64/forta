@@ -1,7 +1,8 @@
 import lineBar from "../../../assets/images/MonitoringAndProtectingImg/Vector 265.png";
 const MonitoringAndProtecting = () => {
   return (
-    <div className="lg:px-[227px] px-12 lg:mt-[221px] mt-12 lg:ml-16">
+    <div className="lg:px-[227px] px-12 lg:mt-[221px] mt-12 lg:ml-16 ">
+     
       <h1
         className="
             lg:text-[60px] text-[40px] text-[#F2F2F2] capitalize"
@@ -14,6 +15,7 @@ const MonitoringAndProtecting = () => {
         <h1 className="text-[60px] italic text-[#F2F2F2]  capitalize">all assets in Web3</h1>
       </div>
     </div>
+    
   );
 };
 
