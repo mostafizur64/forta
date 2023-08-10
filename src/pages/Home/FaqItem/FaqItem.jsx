@@ -48,14 +48,14 @@ const FaqItem = () => {
 
   return (
     <Container>
-      <div className="faq-shadow relative z-50 ">
+      <div className="faq-shadow relative z-50 mt-[170px]">
         <h1
           className="text-center text-[60px] capitalize"
           style={{ color: "rgba(228,230,237,0.90)" }}
         >
           Frequently asked questions
         </h1>
-        <div className=" space-y-8 mt-[60px]">
+        <div className="lg:mt-[70px] mt-28 space-y-[40px]">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -76,10 +76,10 @@ const FaqItem = () => {
                       toggleFaq(index);
                       // Set the button state here if needed
                     }}
-                    className="h-8 w-8 p-2 rounded-lg text-white border border-white flex items-center justify-center"
+                    className="h-8 w-8 p-2 lg:mt-[25px] rounded-lg text-white border border-white flex items-center justify-center"
                   />
                 ) : (
-                  <FaAngleDown className="h-8 w-8 p-2 rounded-lg text-white border border-white" />
+                  <FaAngleDown className="h-8 w-8 p-2 lg:mt-[25px] rounded-lg text-white border border-white" />
                 )}
               </div>
               {activeIndex === index && (

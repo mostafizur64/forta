@@ -13,8 +13,8 @@ import {
 const Footer = () => {
   return (
     <Container>
-      <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-[70px] justify-between items-center mt-[100px] text-white footer-shadow">
-      <img className="absolute w-full mt-[400px] px-[50px] bg-no-repeat bg-cover bg-center" src={bgimg} alt="logo" />
+      <div className="relative grid grid-cols-1 lg:grid-cols-3 justify-between items-center lg:mt-[200px] mt-24 text-white footer-shadow">
+      <img className="absolute  mt-[400px] px-[50px] bg-no-repeat bg-cover bg-center" src={bgimg} alt="logo" />
         <div className="">
           <img className="w-[154px] h-[34px]" src={logo} alt="logo" />
           <p className="mt-[30px] mb-[40px]">©2023 – All Rights Reserved</p>
@@ -35,7 +35,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="z-50">
-          <img className="w-[582px] h-[548px] " src={img} alt="middleimg" />
+          <img className=" h-[548px] w-full " src={img} alt="middleimg" />
         </div>
         <div className="lg:w-[395px] w-full  lg:ml-[40px]">
           <h2 className="text-[40px]">Stay updated on the latest Forta news</h2>
@@ -52,13 +52,13 @@ const Footer = () => {
             <img
               src={linebar}
               alt=""
-              className="absolute mt-8 lg:w-[389px] w-full "
+              className="absolute mt-[12px] lg:w-[389px] w-full "
             />
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap- lg:gap-[292px] justify-between items-center text-[20px] text-[#fff] mt-[105px]">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap- lg:gap-[292px] justify-between items-center text-[20px] text-[#fff] lg:mt-[105px] mt-24 space-y-6">
         <a href="#">Subscribe</a>
         <a href="#">Build</a>
         <a href="#" className="w-[120px]">

@@ -142,6 +142,19 @@
     rgba(14, 15, 22, 0.8) 100%
   );
 }
+/* .brand css  */
+
+.brand-container {
+  border-radius: 12px;
+  border: 1px solid rgba(197, 188, 248, 0.15);
+}
+
+.brand-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Choose 'cover', 'contain', or 'fill' based on your design */
+}
+
 .footer-shadow::before {
   position: absolute;
   content: "";
@@ -176,6 +189,6 @@
 @media (max-width: 768px) {
   .slider-shadow {
     right: 10px;
-   width: 200px;
+    width: 200px;
   }
 }

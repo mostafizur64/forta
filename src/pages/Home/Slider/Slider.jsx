@@ -34,7 +34,7 @@ const Slider = () => {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper mt-[57px]"
+        className="mySwiper lg:mt-[57px] mt-24"
       >
         <SwiperSlide className="sliders">
           <div className="flex flex-row gap-[40px] px-4  border-1  border-[#fff]">

@@ -1,27 +1,45 @@
+
 import React from "react";
 import { FaCirclePlay } from "react-icons/fa6";
 
-const VideoButton = () => {
+const ResponsiveButton = ({image1, image2 }) => {
   return (
-    <div className="videobutton ">
-      <div className="relative lg:w-[464px] w-[100%] lg:h-[126px] h-auto cursor-pointer">
+    <button className="relative overflow-hidden w-[396px] h-[126px]">
+      <div className="relative w-full h-full">
         <img
-          className="absolute top-0 left-0 w-full"
-          src="https://i.ibb.co/614DFX1/Rectangle-402.png"
-          alt=""
+          src={image1}
+          alt="Background 1"
+          className="w-[396px] h-[126px] object-cover"
         />
-        <img
-          className="absolute lg:top-[75px] lg:left-[75px] lg:z-1 z lg:w-[315px] h-[105px] w-[270px] top-[57px] left-[64px]"
-          src="https://i.ibb.co/s6Rzkdj/Rectangle-405.png"
-          alt=""
-        />
-        <div className="absolute lg:top-[95px] lg:left-28 top-[72px] left-[72px] flex justify-center items-center gap-4 cursor-pointer">
-          <div className="text-2xl border border-white rounded-full"><FaCirclePlay size={60} className="p-2"/></div>
-          <div className="w-full text-2xl">start play video</div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img
+            src={image2}
+            alt="Background 2"
+            className="w-2/3 h-2/3 object-cover"
+          />
         </div>
       </div>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="text-white text-lg flex justify-center items-center gap-4">
+          <div className="">
+            <FaCirclePlay size={60} className="p-2 border border-white rounded-full" />
+          </div>
+          <div className="">Play Demo Video</div>
+        </div>
+      </div>
+    </button>
+  );
+};
+
+export const VideoButton = () => {
+  const image1 = "https://i.ibb.co/614DFX1/Rectangle-402.png"; // Replace with your image paths
+  const image2 = "https://i.ibb.co/s6Rzkdj/Rectangle-405.png"; // Replace with your image paths
+
+  return (
+    <div className="flex justify-center items-center">
+      <ResponsiveButton title="Click Me" image1={image1} image2={image2} />
     </div>
   );
 };
 
-export default VideoButton;
+// Render the app
