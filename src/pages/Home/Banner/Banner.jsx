@@ -11,7 +11,7 @@ import img from "../../../assets/images/logo/Forta.png";
 import { VideoButton } from "./VideoButton";
 const Banner = () => {
   return (
-    // grid grid-cols-1 lg:grid-cols-2 gap-12
+
     <Container>
       <div className="banner relative">
         <img

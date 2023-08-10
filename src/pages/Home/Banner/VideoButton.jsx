@@ -15,7 +15,7 @@ const ResponsiveButton = ({image1, image2 }) => {
           <img
             src={image2}
             alt="Background 2"
-            className="w-2/3 h-2/3 object-cover"
+            className="w-2/3 h-2/3 object-cover rounded-lg"
           />
         </div>
       </div>
